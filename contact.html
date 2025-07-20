@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact - Nicolas Lambecq Photographe Agen</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contactez Nicolas Lambecq, photographe professionnel à Agen.">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* UNIQUEMENT le CSS du formulaire de contact */
+    .contact-form-section { max-width: 550px; margin: 40px auto 40px auto; background: #f4f4f4; border-radius: 20px; box-shadow: 0 2px 16px rgba(0,0,0,0.16); padding: 2em 2em 1.2em 2em; border: 1.5px solid #d3d3d3; color: #222; }
+    .contact-form-section h1 { text-align: center; margin-bottom: 1em; color: #222; font-weight: 700; font-size: 2em; letter-spacing: 0.03em; }
+    .contact-info { text-align: center; margin-bottom: 1em; font-size: 1.07em; color: #333; }
+    .contact-info a { color: #d90429; font-weight: bold; text-decoration: underline; }
+    .contact-form label { font-weight: 600; display: block; margin: 0.9em 0 0.2em 0; color: #222; font-size: 1.03em; letter-spacing: 0.01em; }
+    .contact-form input, .contact-form textarea { width: 100%; padding: 0.7em; border-radius: 6px; border: 1px solid #bbb; margin-bottom: 1em; font-family: inherit; font-size: 1em; background: #fff; color: #222; transition: border 0.2s; box-sizing: border-box; }
+    .contact-form input:focus, .contact-form textarea:focus { border: 1.5px solid #d90429; outline: none; }
+    .contact-form button { background: #d90429; color: #fff; font-weight: bold; font-size: 1.15em; border: none; padding: 0.7em 2.2em; border-radius: 24px; cursor: pointer; box-shadow: 0 2px 10px rgba(0,0,0,0.07); transition: background 0.2s; margin: 0 auto; display: block; margin-bottom: 1em; }
+    .contact-form button:hover { background: #b80322; }
+    .special-link { background: #d90429; color: #fff; font-weight: bold; border-radius: 16px; padding: 0.7em 1.1em; text-decoration: none; display: inline-block; font-size: 1.15em; margin: 0 auto; box-shadow: 0 2px 10px rgba(0,0,0,0.07); transition: background 0.2s; text-align: center; }
+    .special-link:hover { background: #b80322; }
+    .success-message { background: #d90429; color: #fff; font-weight: bold; border-radius: 14px; padding: 1em 1.2em; text-align: center; margin-bottom: 1.2em; box-shadow: 0 2px 10px rgba(0,0,0,0.07); font-size: 1.08em; display: none; }
+    .error-message { background: #b80322; color: #fff; font-weight: bold; border-radius: 14px; padding: 1em 1.2em; text-align: center; margin-bottom: 1.2em; box-shadow: 0 2px 10px rgba(0,0,0,0.07); font-size: 1.08em; display: none; }
+  </style>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+<body>
+  <header>
+    <!-- COPIE/COLLE EXACTEMENT le code du header/nav des autres pages -->
+    <nav class="glassnav" aria-label="Menu principal">
+      <a href="index.html" class="logo-nav">
+        <img src="images/logo-nl.jpg" alt="Logo Nicolas Lambecq, photographe à Agen" class="logo-nav-img">
+      </a>
+      <ul class="menu">
+        <li><a href="index.html">Accueil</a></li>
+        <li class="has-dropdown">
+          <a href="#">Portfolio ▼</a>
+          <ul class="dropdown">
+            <li><a href="portfolio-mode.html">Mode</a></li>
+            <li><a href="portfolio-portrait.html">Portrait</a></li>
+            <li><a href="portfolio-studio.html">Studio</a></li>
+            <li><a href="portfolio-grossesse.html">Grossesse / Naissance</a></li>
+            <li><a href="portfolio-mariage.html">Mariage</a></li>
+          </ul>
+        </li>
+        <li><a href="portraits-art.html">Portrait d’Art</a></li>
+        <li><a href="therapie-photo.html">Thérapie-Photo</a></li>
+        <li><a href="a-propos.html">A Propos</a></li>
+        <li><a href="formules-tarifs.html">Formules-Tarifs</a></li>
+        <li class="active"><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="menu mobile-menu" id="mobile-menu">
+        <li><a href="index.html">Accueil</a></li>
+        <li class="has-dropdown">
+          <a href="#">Portfolio ▼</a>
+          <ul class="dropdown">
+            <li><a href="portfolio-mode.html">Mode</a></li>
+            <li><a href="portfolio-portrait.html">Portrait</a></li>
+            <li><a href="portfolio-studio.html">Studio</a></li>
+            <li><a href="portfolio-grossesse.html">Grossesse / Naissance</a></li>
+            <li><a href="portfolio-mariage.html">Mariage</a></li>
+          </ul>
+        </li>
+        <li><a href="portraits-art.html">Portrait d’Art</a></li>
+        <li><a href="therapie-photo.html">Thérapie-Photo</a></li>
+        <li><a href="a-propos.html">A Propos</a></li>
+        <li><a href="formules-tarifs.html">Formules-Tarifs</a></li>
+        <li class="active"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="contact-form-section">
+      <h1>Contactez-moi</h1>
+      <div class="contact-info">
+        Pour toute demande de séance, information ou devis,<br>
+        vous pouvez utiliser ce formulaire ou m’écrire directement à <br>
+        <a href="mailto:contact@nicolaslambecq.com">contact@nicolaslambecq.com</a>
+      </div>
+      <div class="success-message" id="success-message">Merci, votre message a bien été envoyé ! Je vous répondrai rapidement.</div>
+      <div class="error-message" id="error-message">Erreur lors de l'envoi. Merci de réessayer ou d'écrire à <a href='mailto:contact@nicolaslambecq.com'>contact@nicolaslambecq.com</a></div>
+      <form class="contact-form" id="contact-form">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required>
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telephone">Téléphone :</label>
+        <input type="tel" id="telephone" name="telephone">
+
+        <label for="message">Votre message :</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Envoyer</button>
+      </form>
+      <div style="text-align:center; margin-top:1.5em;">
+        <a href="index.html" class="special-link">← Retour à l'accueil</a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div>
+      © Nicolas Lambecq Photographie – Agen<br>
+      <a href="mailto:contact@nicolaslambecq.com" style="color:#d90429;">contact@nicolaslambecq.com</a>
+    </div>
+  </footer>
+  <script>
+    // Menu burger / responsive
+    document.querySelector('.burger').addEventListener('click', function() {
+      const mobileMenu = document.getElementById('mobile-menu');
+      if (mobileMenu.style.display === 'flex') {
+        mobileMenu.style.display = 'none';
+        this.setAttribute('aria-expanded', 'false');
+      } else {
+        mobileMenu.style.display = 'flex';
+        this.setAttribute('aria-expanded', 'true');
+      }
+    });
+    // Fermer le menu mobile si on resize au-dessus de 950px
+    window.addEventListener('resize', function() {
+      if(window.innerWidth > 950){
+        document.getElementById('mobile-menu').style.display = 'none';
+        document.querySelector('.burger').setAttribute('aria-expanded', 'false');
+      }
+    });
+    // Initialise EmailJS avec la clé publique
+    emailjs.init("VMBXcNleL16xykZsu");
+    const form = document.getElementById('contact-form');
+    const successMsg = document.getElementById('success-message');
+    const errorMsg = document.getElementById('error-message');
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      successMsg.style.display = 'none';
+      errorMsg.style.display = 'none';
+      emailjs.sendForm('service_vajgclg', 'template_6nmopze', this)
+        .then(function() {
+          successMsg.style.display = 'block';
+          form.reset();
+        }, function(error) {
+          errorMsg.style.display = 'block';
+        });
+    });
+  </script>
+</body>
+</html>

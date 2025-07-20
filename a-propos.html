@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Propos - Nicolas Lambecq Photographe Agen</title>
+  <meta name="description" content="Découvrez le parcours et la passion de Nicolas Lambecq, photographe professionnel autodidacte à Agen.">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Styles spécifiques pour les images a-propos */
+    .apropos-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 32px;
+      align-items: flex-start;
+      justify-content: center;
+    }
+    .apropos-text {
+      flex: 2 1 320px;
+      min-width: 240px;
+      font-size: 1.15em;
+      line-height: 1.7;
+    }
+    .apropos-images {
+      flex: 1 1 160px;
+      min-width: 120px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      align-items: center;
+    }
+    .apropos-img {
+      max-width: 160px;
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.09);
+      object-fit: cover;
+      transition: transform 0.2s;
+    }
+    .apropos-img:hover {
+      transform: scale(1.03);
+    }
+    @media (max-width: 700px) {
+      .apropos-row {
+        flex-direction: column;
+        gap: 24px;
+      }
+      .apropos-images {
+        flex-direction: row;
+        justify-content: center;
+        gap: 14px;
+      }
+      .apropos-img {
+        max-width: 40vw;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="glassnav" aria-label="Menu principal">
+      <a href="index.html" class="logo-nav">
+        <img src="images/logo-nl.jpg" alt="Logo Nicolas Lambecq, photographe à Agen" class="logo-nav-img">
+      </a>
+      <ul class="menu">
+        <li><a href="index.html">Accueil</a></li>
+        <li class="has-dropdown">
+          <a href="#">Portfolio</a>
+          <ul class="dropdown">
+            <li><a href="portfolio-mode.html">Mode</a></li>
+            <li><a href="portfolio-portrait.html">Portrait</a></li>
+            <li><a href="portfolio-studio.html">Studio</a></li>
+            <li><a href="portfolio-grossesse.html">Grossesse / Naissance</a></li>
+            <li><a href="portfolio-mariage.html">Mariage</a></li>
+          </ul>
+        </li>
+        <li><a href="portraits-art.html">Portrait d’Art</a></li>
+        <li><a href="therapie-photo.html">Thérapie-Photo</a></li>
+        <li class="active"><a href="a-propos.html">A Propos</a></li>
+        <li><a href="formules-tarifs.html">Formules-Tarifs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="menu mobile-menu" id="mobile-menu">
+        <li><a href="index.html">Accueil</a></li>
+        <li class="has-dropdown">
+          <a href="#">Portfolio</a>
+          <ul class="dropdown">
+            <li><a href="portfolio-mode.html">Mode</a></li>
+            <li><a href="portfolio-portrait.html">Portrait</a></li>
+            <li><a href="portfolio-studio.html">Studio</a></li>
+            <li><a href="portfolio-grossesse.html">Grossesse / Naissance</a></li>
+            <li><a href="portfolio-mariage.html">Mariage</a></li>
+          </ul>
+        </li>
+        <li><a href="portraits-art.html">Portrait d’Art</a></li>
+        <li><a href="therapie-photo.html">Thérapie-Photo</a></li>
+        <li class="active"><a href="a-propos.html">A Propos</a></li>
+        <li><a href="formules-tarifs.html">Formules-Tarifs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="glass-section fadein">
+      <h1 class="section-title">A Propos</h1>
+      <div class="apropos-row">
+        <div class="apropos-text">
+          <p>
+            Photographe professionnel autodidacte situé près d’Agen (47) passionné par l’image depuis ma plus tendre enfance.<br><br>
+            Tout a débuté avec mon grand-père, dont l’une des passions était la photographie de portrait. J’ai commencé par lui servir de mini modèle, puis l’accompagnait plus tard dans mon enfance au laboratoire qu’il avait installé chez lui afin de développer les négatifs argentiques de l’époque. Nous étions alors bien loin de l’ère du numérique. Vous l’aurez compris, c’est de là que me vient cet intérêt pour la photo.<br><br>
+            Cette passion m’a toujours suivie, ainsi j’ai acquis mon premier appareil photo numérique en 2001. C’est en 2013 que j’ai franchi le pas et me suis concentré de manière assidue à l’amélioration continue de ma technique.<br><br>
+            L’année 2015 est également une année importante dans mon évolution photographique, avec la mise en place d’un véritable studio, équipé de matériel professionnel.<br><br>
+            En 2018, j’ai créé un groupe sur les réseaux sociaux, regroupant photographes et modèles de la région afin d’échanger, s’entraider, et organiser nombre d’évènements autour de cette passion commune qu’est la photo.<br><br>
+            Ma volonté, mon plaisir a toujours été, et restera de procurer du bonheur à travers l’image. Un résultat photographie réussi est selon moi principalement lié à la complicité et la confiance entre le photographe est ses sujets. Raison pour laquelle j’attache une importance toute particulière à la bonne humeur durant mes séances.<br><br>
+            Vous désirez un book ou tout simplement avoir de belles photos, je les réalise pour vous. Mode, Couple, Grossesse, Naissance, Baptême, Mariage, Glamour, Portrait, Confiance en soi par l’image (Photo-thérapie)… <br>
+            A domicile, en extérieur ou au studio, j’immortalise vos projets dans la convivialité et la bonne humeur.<br><br>
+            Vous pouvez me contacter et suivre mon travail également sur les réseaux sociaux :<br>
+            <strong>Facebook :</strong> Nicolas Lambecq<br>
+            <strong>Instagram :</strong> nicolaslambecq
+          </p>
+        </div>
+        <div class="apropos-images">
+          <img src="images/a-propos/a-propos01.webp" alt="Nicolas Lambecq photographe portrait Agen" loading="lazy" class="apropos-img">
+          <img src="images/a-propos/a-propos02.webp" alt="Studio photo Agen Nicolas Lambecq" loading="lazy" class="apropos-img">
+        </div>
+      </div>
+      <a href="index.html" class="backtotop special-link"
+         style="margin:2em auto 0 auto;display:block;max-width:220px;text-align:center;font-size:1.15em;">
+        ← Retour à l'accueil
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      © Nicolas Lambecq Photographie – Agen<br>
+      <a href="mailto:contact@nicolaslambecq.com" style="color:#d90429;">contact@nicolaslambecq.com</a>
+    </div>
+  </footer>
+  <script src="burger.js"></script>
+  <script src="fadein.js"></script>
+  <script src="lightbox.js"></script>
+</body>
+</html>
