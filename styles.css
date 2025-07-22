@@ -796,6 +796,11 @@ footer {
     object-fit: cover;
     display: block;
   }
+
+  /* TEST : fond vert sur mobile portrait */
+  body {
+    background: #2e7d32 !important;
+  }
 }
 @media (max-width: 520px) {
   .glassnav {
