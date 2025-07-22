@@ -320,8 +320,9 @@ a:focus, button:focus, .glass-card:focus, .special-link:focus, .cta-btn:focus {
   max-width: 65vw;
 }
 
-/* --- SECTION GLASS --- */
-.glass-section {
+/* --- SECTION GLASS et TARIFS --- */
+.glass-section,
+.tarif-section {
   max-width: 1100px;
   margin: 1.2em auto 2.2em auto;
   padding: 1.5em 2em 2.5em 2em;
@@ -331,6 +332,7 @@ a:focus, button:focus, .glass-card:focus, .special-link:focus, .cta-btn:focus {
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border: 1.5px solid #d9042918;
+  color: #fff;
 }
 .section-title {
   font-size: 2em;
@@ -340,6 +342,139 @@ a:focus, button:focus, .glass-card:focus, .special-link:focus, .cta-btn:focus {
   font-weight: 700;
   letter-spacing: 2px;
   text-shadow: 0 2px 14px #0006;
+}
+
+/* --- Correction lisibilité toutes parties explicatives --- */
+.tarif-section p,
+.tarif-section .note,
+.tarif-section .sub-title,
+.tarif-section h1,
+.tarif-section h2,
+.tarif-section h3,
+.tarif-section ul,
+.tarif-section li,
+.tarif-section strong,
+.tarif-section em,
+.tarif-section span,
+.glass-section p,
+.glass-section .note,
+.glass-section .sub-title,
+.glass-section h1,
+.glass-section h2,
+.glass-section h3,
+.glass-section ul,
+.glass-section li,
+.glass-section strong,
+.glass-section em,
+.glass-section span {
+  color: #fff !important;
+  opacity: 1 !important;
+}
+
+/* Titres/sous-titres/prix rouges */
+.tarif-section .sub-title,
+.tarif-section h2.section-title,
+.tarif-section .tarif-bloc-title,
+.tarif-section .tarif-highlight,
+.glass-section .sub-title,
+.glass-section h2.section-title,
+.glass-section .tarif-bloc-title,
+.glass-section .tarif-highlight {
+  color: #d90429 !important;
+}
+
+/* Listes explicatives en blanc */
+.tarif-section ul,
+.glass-section ul {
+  color: #fff !important;
+  font-size: 1.07em;
+  margin: 0.8em auto 1em auto;
+  max-width: 630px;
+  padding-left: 1.3em;
+  line-height: 1.6;
+}
+.tarif-section li,
+.glass-section li {
+  color: #fff !important;
+}
+
+/* --- TARIFS BLOCS EN HAUT --- */
+.tarif-bloc-row {
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+  margin: 2em 0 2em 0;
+  flex-wrap: wrap;
+}
+.tarif-bloc {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(217,4,41,0.07);
+  padding: 1.1em 1.6em 1em 1.6em;
+  min-width: 180px;
+  max-width: 220px;
+  text-align: center;
+  border: 1.5px solid #d9042920;
+  font-family: 'Montserrat', serif;
+  margin-bottom: 1em;
+  color: #222;
+}
+.tarif-bloc-title {
+  font-size: 1.17em;
+  font-weight: bold;
+  color: #d90429;
+  margin-bottom: 0.35em;
+}
+.tarif-bloc-price {
+  font-size: 1.25em;
+  color: #222;
+  font-weight: bold;
+  margin-bottom: 0.1em;
+}
+
+/* --- Tableaux tarifs --- */
+.tarif-table th,
+.tarif-table td {
+  background: #fff;
+  color: #222;
+  border: 1px solid #eee;
+  padding: 0.5em 0.5em;
+  text-align: center;
+}
+.tarif-table th {
+  font-weight: bold;
+  font-size: 1.05em;
+  background: #f4f4f4;
+}
+.tarif-table .tarif-highlight {
+  color: #d90429 !important;
+  font-weight: bold;
+  background: #fff;
+}
+
+/* Responsive tarifs */
+@media (max-width: 700px) {
+  .tarif-section {
+    padding: 1em 0.3em 1em 0.3em;
+  }
+  .tarif-table th,
+  .tarif-table td {
+    font-size: 0.95em;
+    padding: 0.35em 0.2em;
+  }
+  .guide-img {
+    max-width: 94vw;
+  }
+  .tarif-bloc-row {
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+  }
+  .tarif-bloc {
+    width: 94vw;
+    max-width: 99vw;
+    min-width: 0;
+  }
 }
 
 /* --- GALLERY MASONRY --- */
@@ -514,7 +649,6 @@ a:focus, button:focus, .glass-card:focus, .special-link:focus, .cta-btn:focus {
   display: block;
   filter: brightness(0.97) contrast(1.1);
 }
-/* Suppression de la mention "Nouveau" */
 .badge {
   display: none !important;
 }
@@ -703,7 +837,8 @@ footer {
   }
 }
 @media (max-width: 900px) {
-  .glass-section {
+  .glass-section,
+  .tarif-section {
     padding: 1em 0.5em 2em 0.5em;
   }
   .masonry-gallery { column-count: 2; }
@@ -725,7 +860,8 @@ footer {
   .glass-card img, .glass-card picture {
     height: 100px;
   }
-  .glass-section {
+  .glass-section,
+  .tarif-section {
     padding: 1.2em 0.3em 2em 0.3em;
   }
   .glass-grid {
@@ -753,17 +889,8 @@ footer {
 }
 @media (max-width: 600px) {
   .masonry-gallery { column-count: 1; }
-
-  /* Correction images portfolio/cards pour affichage entier sans troncature */
   .glass-card img,
-  .glass-card picture {
-    width: 100%;
-    max-width: 100vw;
-    height: auto;
-    object-fit: contain;
-    border-radius: 20px 20px 0 0;
-    background: #222;
-  }
+  .glass-card picture,
   .special-card img {
     width: 100%;
     max-width: 100vw;
