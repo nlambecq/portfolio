@@ -8,114 +8,6 @@
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <style>
-    .tarif-section {
-      max-width: 850px;
-      margin: 0 auto;
-      background: rgba(255,255,255,0.98);
-      border-radius: 18px;
-      box-shadow: 0 2px 16px rgba(0,0,0,0.10);
-      padding: 2em 2em 2em 2em;
-      color: #222;
-    }
-    .tarif-section h1 {
-      text-align: center;
-      font-size: 2.2em;
-      font-family: 'Montserrat', serif;
-      font-weight: 700;
-      margin-bottom: 0.4em;
-      letter-spacing: 0.04em;
-    }
-    .tarif-section h2 {
-      font-size: 1.5em;
-      margin-top: 2em;
-      margin-bottom: 0.4em;
-      font-family: 'Montserrat', serif;
-    }
-    .tarif-section h3 {
-      font-size: 1.25em;
-      margin-bottom: 0.2em;
-      font-family: 'Montserrat', serif;
-    }
-    .tarif-section p {
-      font-size: 1.07em;
-      color: #333;
-      text-align: center;
-      margin-bottom: 1em;
-    }
-    .tarif-table {
-      width: 100%;
-      margin: 1em auto 2em auto;
-      border-collapse: collapse;
-      font-size: 1em;
-    }
-    .tarif-table th, .tarif-table td {
-      border: 1px solid #eee;
-      padding: 0.5em 0.5em;
-      text-align: center;
-    }
-    .tarif-table th {
-      background: #f4f4f4;
-      font-weight: bold;
-      font-size: 1.05em;
-    }
-    .tarif-table td {
-      background: #fff;
-    }
-    .tarif-highlight {
-      font-weight: bold;
-      color: #d90429;
-    }
-    .tarif-section ul {
-      margin: 0.8em auto 1em auto;
-      max-width: 630px;
-      padding-left: 1.3em;
-      color: #444;
-      font-size: 1em;
-      line-height: 1.6;
-    }
-    .tarif-section .note {
-      font-size: 0.97em;
-      color: #d90429;
-      text-align: center;
-      font-weight: 600;
-      margin-top: 1.2em;
-    }
-    .guide-img {
-      display: block;
-      margin: 2em auto 1em auto;
-      max-width: 330px;
-      width: 100%;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.09);
-      cursor: pointer;
-      transition: box-shadow 0.2s;
-    }
-    .guide-img:hover {
-      box-shadow: 0 4px 16px rgba(217,4,41,0.20);
-    }
-    .tarif-section .sub-title {
-      font-weight: 700;
-      font-size: 1.17em;
-      color: #d90429;
-      letter-spacing: 0.01em;
-      text-align: center;
-      margin-bottom: 1em;
-      margin-top: 1em;
-    }
-    @media (max-width: 700px) {
-      .tarif-section {
-        padding: 1em 0.3em 1em 0.3em;
-      }
-      .tarif-table th, .tarif-table td {
-        font-size: 0.95em;
-        padding: 0.35em 0.2em;
-      }
-      .guide-img {
-        max-width: 94vw;
-      }
-    }
-  </style>
 </head>
 <body>
   <header>
@@ -168,14 +60,39 @@
   </header>
 
   <main>
-    <section class="tarif-section fadein">
-      <h1>Formules & Tarifs</h1>
-      <div class="sub-title">Guide de séance & tarifs</div>
-      <a href="images/formules-tarifs/guide-seance.jpg" target="_blank" rel="noopener">
-        <img src="images/formules-tarifs/guide-seance.jpg" alt="Guide de séance, déroulement, frais, visionnage, livraison" class="guide-img">
-      </a>
-      <p>
-        <span class="tarif-highlight">Frais de séance : 50&nbsp;€</span> <br>
+    <section class="glass-section fadein">
+      <h1 class="section-title">Formules & Tarifs</h1>
+      <!-- Blocs tarifs à partir de... -->
+      <div class="tarif-bloc-row" style="display:flex;justify-content:center;gap:1.5em;flex-wrap:wrap;margin:2em 0;">
+        <div class="tarif-bloc" style="background:#fff7fa;border-radius:14px;box-shadow:0 2px 8px rgba(217,4,41,0.07);padding:1.1em 1.6em 1em 1.6em;min-width:180px;max-width:220px;text-align:center;border:1.5px solid #d9042920;font-family:'Montserrat',serif;margin-bottom:1em;">
+          <div class="tarif-bloc-title" style="font-size:1.17em;font-weight:bold;color:#d90429;margin-bottom:0.35em;">Portrait d’Art</div>
+          <div class="tarif-bloc-price" style="font-size:1.25em;color:#222;font-weight:bold;margin-bottom:0.1em;">à partir de 50&nbsp;€</div>
+        </div>
+        <div class="tarif-bloc" style="background:#fff7fa;border-radius:14px;box-shadow:0 2px 8px rgba(217,4,41,0.07);padding:1.1em 1.6em 1em 1.6em;min-width:180px;max-width:220px;text-align:center;border:1.5px solid #d9042920;font-family:'Montserrat',serif;margin-bottom:1em;">
+          <div class="tarif-bloc-title" style="font-size:1.17em;font-weight:bold;color:#d90429;margin-bottom:0.35em;">Séance Studio</div>
+          <div class="tarif-bloc-price" style="font-size:1.25em;color:#222;font-weight:bold;margin-bottom:0.1em;">à partir de 50&nbsp;€</div>
+        </div>
+        <div class="tarif-bloc" style="background:#fff7fa;border-radius:14px;box-shadow:0 2px 8px rgba(217,4,41,0.07);padding:1.1em 1.6em 1em 1.6em;min-width:180px;max-width:220px;text-align:center;border:1.5px solid #d9042920;font-family:'Montserrat',serif;margin-bottom:1em;">
+          <div class="tarif-bloc-title" style="font-size:1.17em;font-weight:bold;color:#d90429;margin-bottom:0.35em;">Séance Mode</div>
+          <div class="tarif-bloc-price" style="font-size:1.25em;color:#222;font-weight:bold;margin-bottom:0.1em;">à partir de 50&nbsp;€</div>
+        </div>
+        <div class="tarif-bloc" style="background:#fff7fa;border-radius:14px;box-shadow:0 2px 8px rgba(217,4,41,0.07);padding:1.1em 1.6em 1em 1.6em;min-width:180px;max-width:220px;text-align:center;border:1.5px solid #d9042920;font-family:'Montserrat',serif;margin-bottom:1em;">
+          <div class="tarif-bloc-title" style="font-size:1.17em;font-weight:bold;color:#d90429;margin-bottom:0.35em;">Grossesse / Naissance</div>
+          <div class="tarif-bloc-price" style="font-size:1.25em;color:#222;font-weight:bold;margin-bottom:0.1em;">à partir de 50&nbsp;€</div>
+        </div>
+        <div class="tarif-bloc" style="background:#fff7fa;border-radius:14px;box-shadow:0 2px 8px rgba(217,4,41,0.07);padding:1.1em 1.6em 1em 1.6em;min-width:180px;max-width:220px;text-align:center;border:1.5px solid #d9042920;font-family:'Montserrat',serif;margin-bottom:1em;">
+          <div class="tarif-bloc-title" style="font-size:1.17em;font-weight:bold;color:#d90429;margin-bottom:0.35em;">Mariage</div>
+          <div class="tarif-bloc-price" style="font-size:1.25em;color:#222;font-weight:bold;margin-bottom:0.1em;">à partir de 690&nbsp;€</div>
+        </div>
+      </div>
+
+      <!-- Texte complet et tableaux -->
+      <div class="sub-title" style="font-weight:700;font-size:1.17em;color:#d90429;letter-spacing:0.01em;text-align:center;margin-bottom:1em;margin-top:1em;">
+        Guide de séance & tarifs
+      </div>
+
+      <p style="font-size:1.07em;color:#333;text-align:center;margin-bottom:1em;">
+        <span class="tarif-highlight" style="font-weight:bold;color:#d90429;">Frais de séance : 50&nbsp;€</span> <br>
         Inclut 1 photo numérique HD offerte + 10&nbsp;€ offerts sur les Posters et Tableaux pour tout pack numérique. <br>
         <br>Les frais de séance couvrent :<br>
         — Préparation et échanges pour définir vos envies<br>
@@ -184,144 +101,158 @@
         — 1 photo numérique HD retouchée offerte<br>
         — 10&nbsp;€ offerts sur les Posters et Tableaux<br>
       </p>
-      <p>
+      <p style="font-size:1.07em;color:#333;text-align:center;margin-bottom:1em;">
         <strong>Séance de visionnage sous 10 à 15 jours</strong> après la prise de vue.<br>
         Livraison sous 3 à 4 semaines selon le support choisi.<br>
         Conservation des images au studio.<br>
         Règlement : à la prise de vue, puis le solde à la livraison (espèces, chèque, ou 3x sans frais).
       </p>
 
-      <h2>Impressions & Supports</h2>
-      <p>Des supports d’art de qualité professionnelle qui respectent la colorimétrie et se conservent pour se transmettre.</p>
+      <h2 style="font-size:1.5em;margin-top:2em;margin-bottom:0.4em;font-family:'Montserrat',serif;">Impressions & Supports</h2>
+      <p style="font-size:1.07em;color:#333;text-align:center;margin-bottom:1em;">
+        Des supports d’art de qualité professionnelle qui respectent la colorimétrie et se conservent pour se transmettre.
+      </p>
 
-      <h3>Tirages Portrait d’Art</h3>
-      <p>Tirages Fine Art professionnels aux couleurs et netteté incroyable.</p>
-      <table class="tarif-table">
+      <h3 style="font-size:1.25em;margin-bottom:0.2em;font-family:'Montserrat',serif;">Tirages Portrait d’Art</h3>
+      <p style="font-size:1.07em;color:#333;text-align:center;margin-bottom:1em;">
+        Tirages Fine Art professionnels aux couleurs et netteté incroyable.
+      </p>
+      <table class="tarif-table" style="width:100%;margin:1em auto 2em auto;border-collapse:collapse;font-size:1em;">
         <tr>
-          <th>Format</th>
-          <th>Tarif</th>
+          <th style="background:#f4f4f4;font-weight:bold;font-size:1.05em;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;">Format</th>
+          <th style="background:#f4f4f4;font-weight:bold;font-size:1.05em;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;">Tarif</th>
         </tr>
         <tr>
-          <td>13x19</td>
-          <td class="tarif-highlight">15&nbsp;€</td>
+          <td style="background:#fff;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;">13x19</td>
+          <td class="tarif-highlight" style="background:#fff;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;color:#d90429;font-weight:bold;">15&nbsp;€</td>
         </tr>
         <tr>
-          <td>20x30</td>
-          <td class="tarif-highlight">30&nbsp;€</td>
+          <td style="background:#fff;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;">20x30</td>
+          <td class="tarif-highlight" style="background:#fff;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;color:#d90429;font-weight:bold;">30&nbsp;€</td>
         </tr>
       </table>
 
-      <h3>Poster Portrait d’Art</h3>
-      <p>3 types de finition sont disponibles pour un rendu riche en détails.</p>
-      <table class="tarif-table">
+      <h3 style="font-size:1.25em;margin-bottom:0.2em;font-family:'Montserrat',serif;">Poster Portrait d’Art</h3>
+      <p style="font-size:1.07em;color:#333;text-align:center;margin-bottom:1em;">
+        3 types de finition sont disponibles pour un rendu riche en détails.
+      </p>
+      <table class="tarif-table" style="width:100%;margin:1em auto 2em auto;border-collapse:collapse;font-size:1em;">
         <tr>
-          <th>Format</th>
-          <th>Tarif</th>
+          <th style="background:#f4f4f4;font-weight:bold;font-size:1.05em;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;">Format</th>
+          <th style="background:#f4f4f4;font-weight:bold;font-size:1.05em;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;">Tarif</th>
         </tr>
         <tr>
-          <td>30x45</td>
-          <td class="tarif-highlight">60&nbsp;€</td>
+          <td style="background:#fff;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;">30x45</td>
+          <td class="tarif-highlight" style="background:#fff;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;color:#d90429;font-weight:bold;">60&nbsp;€</td>
         </tr>
         <tr>
-          <td>40x60</td>
-          <td class="tarif-highlight">90&nbsp;€</td>
+          <td style="background:#fff;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;">40x60</td>
+          <td class="tarif-highlight" style="background:#fff;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;color:#d90429;font-weight:bold;">90&nbsp;€</td>
         </tr>
         <tr>
-          <td>60x90</td>
-          <td class="tarif-highlight">120&nbsp;€</td>
+          <td style="background:#fff;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;">60x90</td>
+          <td class="tarif-highlight" style="background:#fff;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;color:#d90429;font-weight:bold;">120&nbsp;€</td>
         </tr>
       </table>
 
-      <h3>Tableaux Portrait d’Art</h3>
+      <h3 style="font-size:1.25em;margin-bottom:0.2em;font-family:'Montserrat',serif;">Tableaux Portrait d’Art</h3>
       <div style="overflow-x:auto">
-        <table class="tarif-table">
+        <table class="tarif-table" style="width:100%;margin:1em auto 2em auto;border-collapse:collapse;font-size:1em;">
           <tr>
-            <th>Format</th>
-            <th>PVC</th>
-            <th>Toile épaisseur 2cm</th>
-            <th>Toile épaisseur 4cm</th>
-            <th>Aluminium</th>
-            <th>Aluminium Brossé</th>
-            <th>Verre Acrylique</th>
-            <th>GalleryPrint Brillant</th>
-            <th>GalleryPrint Mat</th>
+            <th style="background:#f4f4f4;font-weight:bold;font-size:1.05em;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;">Format</th>
+            <th style="background:#f4f4f4;font-weight:bold;font-size:1.05em;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;">PVC</th>
+            <th style="background:#f4f4f4;font-weight:bold;font-size:1.05em;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;">Toile épaisseur 2cm</th>
+            <th style="background:#f4f4f4;font-weight:bold;font-size:1.05em;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;">Toile épaisseur 4cm</th>
+            <th style="background:#f4f4f4;font-weight:bold;font-size:1.05em;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;">Aluminium</th>
+            <th style="background:#f4f4f4;font-weight:bold;font-size:1.05em;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;">Aluminium Brossé</th>
+            <th style="background:#f4f4f4;font-weight:bold;font-size:1.05em;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;">Verre Acrylique</th>
+            <th style="background:#f4f4f4;font-weight:bold;font-size:1.05em;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;">GalleryPrint Brillant</th>
+            <th style="background:#f4f4f4;font-weight:bold;font-size:1.05em;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;">GalleryPrint Mat</th>
           </tr>
           <tr>
-            <td>30x45</td>
-            <td class="tarif-highlight">70&nbsp;€</td>
-            <td class="tarif-highlight">90&nbsp;€</td>
-            <td class="tarif-highlight">100&nbsp;€</td>
-            <td class="tarif-highlight">90&nbsp;€</td>
-            <td class="tarif-highlight">100&nbsp;€</td>
-            <td class="tarif-highlight">120&nbsp;€</td>
-            <td class="tarif-highlight">120&nbsp;€</td>
-            <td class="tarif-highlight">150&nbsp;€</td>
+            <td style="background:#fff;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;">30x45</td>
+            <td class="tarif-highlight" style="background:#fff;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;color:#d90429;font-weight:bold;">70&nbsp;€</td>
+            <td class="tarif-highlight" style="background:#fff;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;color:#d90429;font-weight:bold;">90&nbsp;€</td>
+            <td class="tarif-highlight" style="background:#fff;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;color:#d90429;font-weight:bold;">100&nbsp;€</td>
+            <td class="tarif-highlight" style="background:#fff;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;color:#d90429;font-weight:bold;">90&nbsp;€</td>
+            <td class="tarif-highlight" style="background:#fff;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;color:#d90429;font-weight:bold;">100&nbsp;€</td>
+            <td class="tarif-highlight" style="background:#fff;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;color:#d90429;font-weight:bold;">120&nbsp;€</td>
+            <td class="tarif-highlight" style="background:#fff;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;color:#d90429;font-weight:bold;">120&nbsp;€</td>
+            <td class="tarif-highlight" style="background:#fff;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;color:#d90429;font-weight:bold;">150&nbsp;€</td>
           </tr>
           <tr>
-            <td>40x60</td>
-            <td class="tarif-highlight">100&nbsp;€</td>
-            <td class="tarif-highlight">130&nbsp;€</td>
-            <td class="tarif-highlight">140&nbsp;€</td>
-            <td class="tarif-highlight">130&nbsp;€</td>
-            <td class="tarif-highlight">140&nbsp;€</td>
-            <td class="tarif-highlight">190&nbsp;€</td>
-            <td class="tarif-highlight">190&nbsp;€</td>
-            <td class="tarif-highlight">220&nbsp;€</td>
+            <td style="background:#fff;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;">40x60</td>
+            <td class="tarif-highlight" style="background:#fff;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;color:#d90429;font-weight:bold;">100&nbsp;€</td>
+            <td class="tarif-highlight" style="background:#fff;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;color:#d90429;font-weight:bold;">130&nbsp;€</td>
+            <td class="tarif-highlight" style="background:#fff;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;color:#d90429;font-weight:bold;">140&nbsp;€</td>
+            <td class="tarif-highlight" style="background:#fff;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;color:#d90429;font-weight:bold;">130&nbsp;€</td>
+            <td class="tarif-highlight" style="background:#fff;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;color:#d90429;font-weight:bold;">140&nbsp;€</td>
+            <td class="tarif-highlight" style="background:#fff;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;color:#d90429;font-weight:bold;">190&nbsp;€</td>
+            <td class="tarif-highlight" style="background:#fff;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;color:#d90429;font-weight:bold;">190&nbsp;€</td>
+            <td class="tarif-highlight" style="background:#fff;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;color:#d90429;font-weight:bold;">220&nbsp;€</td>
           </tr>
           <tr>
-            <td>50x75</td>
-            <td class="tarif-highlight">140&nbsp;€</td>
-            <td class="tarif-highlight">170&nbsp;€</td>
-            <td class="tarif-highlight">180&nbsp;€</td>
-            <td class="tarif-highlight">170&nbsp;€</td>
-            <td class="tarif-highlight">180&nbsp;€</td>
-            <td class="tarif-highlight">250&nbsp;€</td>
-            <td class="tarif-highlight">250&nbsp;€</td>
-            <td class="tarif-highlight">280&nbsp;€</td>
+            <td style="background:#fff;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;">50x75</td>
+            <td class="tarif-highlight" style="background:#fff;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;color:#d90429;font-weight:bold;">140&nbsp;€</td>
+            <td class="tarif-highlight" style="background:#fff;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;color:#d90429;font-weight:bold;">170&nbsp;€</td>
+            <td class="tarif-highlight" style="background:#fff;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;color:#d90429;font-weight:bold;">180&nbsp;€</td>
+            <td class="tarif-highlight" style="background:#fff;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;color:#d90429;font-weight:bold;">170&nbsp;€</td>
+            <td class="tarif-highlight" style="background:#fff;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;color:#d90429;font-weight:bold;">180&nbsp;€</td>
+            <td class="tarif-highlight" style="background:#fff;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;color:#d90429;font-weight:bold;">250&nbsp;€</td>
+            <td class="tarif-highlight" style="background:#fff;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;color:#d90429;font-weight:bold;">250&nbsp;€</td>
+            <td class="tarif-highlight" style="background:#fff;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;color:#d90429;font-weight:bold;">280&nbsp;€</td>
           </tr>
           <tr>
-            <td>60x90</td>
-            <td class="tarif-highlight">200&nbsp;€</td>
-            <td class="tarif-highlight">220&nbsp;€</td>
-            <td class="tarif-highlight">230&nbsp;€</td>
-            <td class="tarif-highlight">220&nbsp;€</td>
-            <td class="tarif-highlight">230&nbsp;€</td>
-            <td class="tarif-highlight">350&nbsp;€</td>
-            <td class="tarif-highlight">350&nbsp;€</td>
-            <td class="tarif-highlight">380&nbsp;€</td>
+            <td style="background:#fff;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;">60x90</td>
+            <td class="tarif-highlight" style="background:#fff;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;color:#d90429;font-weight:bold;">200&nbsp;€</td>
+            <td class="tarif-highlight" style="background:#fff;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;color:#d90429;font-weight:bold;">220&nbsp;€</td>
+            <td class="tarif-highlight" style="background:#fff;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;color:#d90429;font-weight:bold;">230&nbsp;€</td>
+            <td class="tarif-highlight" style="background:#fff;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;color:#d90429;font-weight:bold;">220&nbsp;€</td>
+            <td class="tarif-highlight" style="background:#fff;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;color:#d90429;font-weight:bold;">230&nbsp;€</td>
+            <td class="tarif-highlight" style="background:#fff;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;color:#d90429;font-weight:bold;">350&nbsp;€</td>
+            <td class="tarif-highlight" style="background:#fff;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;color:#d90429;font-weight:bold;">350&nbsp;€</td>
+            <td class="tarif-highlight" style="background:#fff;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;color:#d90429;font-weight:bold;">380&nbsp;€</td>
           </tr>
         </table>
       </div>
-      <p class="note">Pour tout achat d’un Poster ou Tableau, les fichiers Haute Définition des images correspondantes sont <strong>offerts</strong>.</p>
+      <p class="note" style="font-size:0.97em;color:#d90429;text-align:center;font-weight:600;margin-top:1.2em;">Pour tout achat d’un Poster ou Tableau, les fichiers Haute Définition des images correspondantes sont <strong>offerts</strong>.</p>
 
-      <h3>Les Numériques</h3>
-      <p>Fichiers numériques au format de partage accessible par galerie privée.<br>Les frais de séance sont inclus.</p>
-      <table class="tarif-table">
+      <h3 style="font-size:1.25em;margin-bottom:0.2em;font-family:'Montserrat',serif;">Les Numériques</h3>
+      <p style="font-size:1.07em;color:#333;text-align:center;margin-bottom:1em;">
+        Fichiers numériques au format de partage accessible par galerie privée.<br>Les frais de séance sont inclus.
+      </p>
+      <table class="tarif-table" style="width:100%;margin:1em auto 2em auto;border-collapse:collapse;font-size:1em;">
         <tr>
-          <th>Nombre de fichiers</th>
-          <th>Tarif</th>
+          <th style="background:#f4f4f4;font-weight:bold;font-size:1.05em;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;">Nombre de fichiers</th>
+          <th style="background:#f4f4f4;font-weight:bold;font-size:1.05em;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;">Tarif</th>
         </tr>
         <tr>
-          <td>1 fichier</td>
-          <td class="tarif-highlight">50&nbsp;€</td>
+          <td style="background:#fff;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;">1 fichier</td>
+          <td class="tarif-highlight" style="background:#fff;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;color:#d90429;font-weight:bold;">50&nbsp;€</td>
         </tr>
         <tr>
-          <td>5 fichiers</td>
-          <td class="tarif-highlight">150&nbsp;€</td>
+          <td style="background:#fff;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;">5 fichiers</td>
+          <td class="tarif-highlight" style="background:#fff;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;color:#d90429;font-weight:bold;">150&nbsp;€</td>
         </tr>
         <tr>
-          <td>10 fichiers</td>
-          <td class="tarif-highlight">250&nbsp;€</td>
+          <td style="background:#fff;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;">10 fichiers</td>
+          <td class="tarif-highlight" style="background:#fff;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;color:#d90429;font-weight:bold;">250&nbsp;€</td>
         </tr>
         <tr>
-          <td>20 fichiers</td>
-          <td class="tarif-highlight">400&nbsp;€</td>
+          <td style="background:#fff;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;">20 fichiers</td>
+          <td class="tarif-highlight" style="background:#fff;border:1px solid #eee;padding:0.5em 0.5em;text-align:center;color:#d90429;font-weight:bold;">400&nbsp;€</td>
         </tr>
       </table>
-      <p class="note">Pour tout achat d’un pack numérique, <span style="font-weight:bold;">10€ offerts</span> sur les Posters et Tableaux</p>
+      <p class="note" style="font-size:0.97em;color:#d90429;text-align:center;font-weight:600;margin-top:1.2em;">Pour tout achat d’un pack numérique, <span style="font-weight:bold;">10€ offerts</span> sur les Posters et Tableaux</p>
 
+      <!-- Guide séance jpg AVANT le bouton retour -->
+      <a href="images/formules-tarifs/guide-seance.jpg" target="_blank" rel="noopener">
+        <img src="images/formules-tarifs/guide-seance.jpg" alt="Guide de séance, déroulement, frais, visionnage, livraison" class="guide-img" style="display:block;margin:2em auto 1em auto;max-width:330px;width:100%;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.09);cursor:pointer;transition:box-shadow 0.2s;">
+      </a>
       <div style="text-align:center; margin-top:1.2em;">
-        <a href="index.html" class="special-link">← Retour à l'accueil</a>
+        <a href="index.html" class="backtotop special-link" style="margin:2em auto 0 auto;display:block;max-width:220px;text-align:center;font-size:1.15em;">
+          ← Retour à l'accueil
+        </a>
       </div>
     </section>
   </main>
